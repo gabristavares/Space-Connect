@@ -260,3 +260,66 @@ form button:hover {
 .botao-link:hover {
   opacity: 0.7;
 }
+
+/* =========================
+   PAGINA SOBRE
+========================= */
+.passo-num {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ed145b;
+  font-size: 2.5rem;
+  font-weight: bold;
+  opacity: 0.4;
+}
+
+.ods-num {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  background: #ed145b;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.numero-card h3 {
+  margin-bottom: 0.5rem;
+  color: #ed145b;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* =========================
+   PAGINA INTEGRANTES
+========================= */
+.integrante {
+  text-align: center;
+}
+
+.integrante img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 18px;
+  object-fit: cover;
+  background: #293241;
+  border: 3px solid #ed145b;
+  border-radius: 50%;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.links a {
+  padding: 10px 16px;
+  background: #ed145b;
+  color: #ffffff;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+}
