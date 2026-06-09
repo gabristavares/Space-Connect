@@ -606,3 +606,187 @@ footer nav {
     transform: translateY(0);
   }
 }
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    min-width: 280px;
+  }
+
+  .simulador-area {
+    grid-template-columns: 1fr;
+  }
+
+  .linha-tempo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    position: static;
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px 5%;
+  }
+
+  .cabecalho img {
+    width: 70px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 6% 50px;
+    text-align: center;
+  }
+
+  .hero-conteudo {
+    max-width: 100%;
+  }
+
+  .pagina,
+  .secao {
+    padding: 50px 6% 30px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .linha-tempo {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .tag {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .cabecalho {
+    padding: 16px 4%;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  nav a.ativo {
+    padding-bottom: 4px;
+  }
+
+  .hero {
+    padding: 40px 5%;
+  }
+
+  .pagina,
+  .secao {
+    padding: 40px 5% 25px;
+  }
+
+  .card,
+  .simulador-form,
+  .resultado-simulador,
+  .linha-tempo article {
+    padding: 20px;
+  }
+
+  .botao,
+  form button {
+    width: 100%;
+  }
+
+  .botao-secundario {
+    margin-left: 0;
+  }
+
+  .orbita {
+    width: 220px;
+    height: 220px;
+  }
+
+  .planeta {
+    width: 170px;
+    height: 170px;
+  }
+
+  .anel {
+    width: 260px;
+    height: 195px;
+  }
+
+  .numero-card h3 {
+    font-size: 2rem;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 15px;
+  }
+
+  footer {
+    padding: 24px 5%;
+  }
+}
