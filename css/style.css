@@ -17,3 +17,37 @@ body {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* =========================
+   TEXTOS GERAIS
+========================= */
+h1 {
+  margin-bottom: 16px;
+  font-size: 64px;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-bottom: 14px;
+  font-size: 28px;
+}
+
+h3 {
+  margin-bottom: 12px;
+  color: #ed145b;
+  font-size: 22px;
+}
+
+p {
+  color: #d1d5db;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.tag {
+  margin-bottom: 14px;
+  color: #ed145b;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
