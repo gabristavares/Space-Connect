@@ -97,7 +97,7 @@ Foram utilizadas media queries no CSS para reorganizar menu, cards, formulários
 
 Repositório no GitHub:
 
-https://github.com/gabristavares/Teste-gs
+https://github.com/gabristavares/Space-Connect
 
 ---
 
