@@ -480,3 +480,129 @@ textarea {
   font-weight: bold;
 }
 
+/* =========================
+   PAGINA FAQ
+========================= */
+.faq-page {
+  padding-top: 130px;
+}
+
+.faq-intro {
+  max-width: 850px;
+}
+
+.faq {
+  max-width: 950px;
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+details {
+  padding: 22px;
+  background: #111827;
+  border: 1px solid #293241;
+  border-radius: 8px;
+}
+
+.faq details {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq details:hover {
+  transform: translateY(-4px);
+  border-color: #ed145b;
+  box-shadow: 0 14px 28px rgba(237, 20, 91, 0.18);
+}
+
+summary {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "+";
+  color: #ed145b;
+  font-size: 28px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.faq details[open] {
+  background: #141d2d;
+  border-color: #ed145b;
+}
+
+.faq details[open] summary::after {
+  content: "-";
+  transform: rotate(180deg);
+}
+
+details p {
+  margin-top: 14px;
+}
+
+.faq details p {
+  animation: abrirFaq 0.3s ease;
+}
+
+/* =========================
+   RODAPE
+========================= */
+footer {
+  padding: 28px 8%;
+  background: #000000;
+  color: #aaaaaa;
+  text-align: center;
+}
+
+footer nav {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* =========================
+   ANIMACOES
+========================= */
+@keyframes abrirFaq {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aparecerMensagem {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
