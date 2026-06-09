@@ -212,3 +212,51 @@ nav a.ativo {
   margin-bottom: 12px;
   color: #ed145b;
 }
+
+/* =========================
+   BOTOES E LINKS
+========================= */
+.botao,
+form button {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 28px;
+  background: #ed145b;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.botao:hover,
+form button:hover {
+  background: #ff2b70;
+  transform: translateY(-3px);
+}
+
+.botao-secundario {
+  margin-left: 12px;
+  background: transparent;
+  border: 1px solid #ed145b;
+}
+
+.botao-secundario:hover {
+  background: #ed145b;
+}
+
+.botao-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ed145b;
+  font-weight: bold;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.botao-link:hover {
+  opacity: 0.7;
+}
