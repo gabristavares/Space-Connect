@@ -57,3 +57,38 @@ if (formSimulador) {
     pontuacaoResultado.textContent = "Pontuacao: " + pontuacao + "%";
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const formularioContato = document.getElementById("formContato");
+  const mensagemContato = document.getElementById("mensagem");
+
+  if (!formularioContato || !mensagemContato) {
+    return;
+  }
+
+  formularioContato.addEventListener("submit", function (evento) {
+    evento.preventDefault();
+
+    const nome = document.getElementById("nome").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const assunto = document.getElementById("assunto").value;
+    const texto = document.getElementById("mensagemTexto").value.trim();
+
+     if (nome === "" || email === "" || assunto === "" || texto === "") {
+      mensagemContato.textContent = "Preencha todos os campos antes de enviar.";
+      mensagemContato.className = "mensagem erro";
+      return;
+    }
+
+    if (!email.includes("@") || !email.includes(".")) {
+      mensagemContato.textContent = "Digite um e-mail valido para enviar a mensagem.";
+      mensagemContato.className = "mensagem erro";
+      return;
+    }
+
+    mensagemContato.textContent = "Mensagem enviada com sucesso! Obrigado pelo contato, " + nome + ".";
+    mensagemContato.className = "mensagem sucesso";
+
+    formularioContato.reset();
+  });
+});
